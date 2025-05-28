@@ -6,7 +6,7 @@ Steps to install
 2. Run Command Prompt as Admin
 3. Navigate to repository root
 
-   `cd "<REPO ROOT>"` e.g. `"C:\Users\<USER>\Documents\GitHub\CounterStrikeConfig"`
+   `cd "<REPO-ROOT>"` e.g. `"C:\Users\<USER>\Documents\GitHub\CounterStrikeConfig"`
 4. Run `setup.bat`
 
    Enter CS2 install location when prompted
