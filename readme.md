@@ -6,9 +6,9 @@ Steps to install
 2. Run Command Prompt as Admin
 3. Run `setup.bat`
 
-   Enter CS2 install location when prompted
+   Enter CS2 install location when prompted e.g.
 
-   e.g. `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive`
+   `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive`
 
    The script will create symlinks to configs
 
