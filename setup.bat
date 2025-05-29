@@ -14,3 +14,6 @@ mklink    "%CfgDir%\autoexec.cfg"     "%RepoDir%\autoexec.cfg"
 mklink    "%CfgDir%\listenserver.cfg" "%RepoDir%\listenserver.cfg"
 mklink    "%CfgDir%\+jump.cfg"        "%RepoDir%\+jump.cfg"
 mklink    "%CfgDir%\-jump.cfg"        "%RepoDir%\-jump.cfg"
+
+echo.
+echo Config install complete
