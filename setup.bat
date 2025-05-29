@@ -4,14 +4,13 @@ echo.
 echo Enter the installation directory, for example:
 echo C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive
 echo.
-set /p "InstallDir=Install location: "
+set /p "Cs2Dir=Install location: "
 
-set "CfgDir=%InstallDir%\game\csgo\cfg"
+set "CfgDir=%Cs2Dir%\game\csgo\cfg"
+set "RepoDir=%~dp0"
 
-for /f "delims=" %%A in ('cd') do (
-  mklink /D "%CfgDir%\movement" "%%A\movement"
-  mklink /H "%CfgDir%\autoexec.cfg" "%%A\autoexec.cfg"
-  mklink /H "%CfgDir%\listenserver.cfg" "%%A\listenserver.cfg"
-  mklink /H "%CfgDir%\+jump.cfg" "%%A\+jump.cfg"
-  mklink /H "%CfgDir%\-jump.cfg" "%%A\-jump.cfg"
-)
+mklink /D "%CfgDir%\movement"         "%RepoDir%\movement"
+mklink /H "%CfgDir%\autoexec.cfg"     "%RepoDir%\autoexec.cfg"
+mklink /H "%CfgDir%\listenserver.cfg" "%RepoDir%\listenserver.cfg"
+mklink /H "%CfgDir%\+jump.cfg"        "%RepoDir%\+jump.cfg"
+mklink /H "%CfgDir%\-jump.cfg"        "%RepoDir%\-jump.cfg"
