@@ -14,4 +14,4 @@ echo. & echo.Linking AUTOEXEC.cfg: & echo.  %CfgDir%AUTOEXEC.cfg
 echo     to & echo.  %GitDir%AUTOEXEC.cfg
 mklink "%CfgDir%AUTOEXEC.cfg" "%GitDir%AUTOEXEC.cfg"
 
-echo Config install complete & echo. & pause
+echo.Config install complete & echo. & pause
