@@ -6,11 +6,13 @@ set /p "Cs2Dir=Install location: "
 set "CfgDir=%Cs2Dir%\game\csgo\cfg\"
 set "GitDir=%~dp0"
 
-echo. & echo.Linking ~ dir: & echo.  %CfgDir%~
+echo. & echo.Linking ~ dir:
+echo.  %CfgDir%~
 echo     to & echo.  %GitDir%~
 mklink /D "%CfgDir%~" "%GitDir%~"
 
-echo. & echo.Linking AUTOEXEC.cfg: & echo.  %CfgDir%AUTOEXEC.cfg
+echo. & echo.Linking AUTOEXEC.cfg:
+echo.  %CfgDir%AUTOEXEC.cfg
 echo     to & echo.  %GitDir%AUTOEXEC.cfg
 mklink "%CfgDir%AUTOEXEC.cfg" "%GitDir%AUTOEXEC.cfg"
 
