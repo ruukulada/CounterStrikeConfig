@@ -14,8 +14,4 @@ echo. & echo.Linking AUTOEXEC.cfg: & echo.  %CfgDir%AUTOEXEC.cfg
 echo     to & echo.  %GitDir%AUTOEXEC.cfg
 mklink "%CfgDir%AUTOEXEC.cfg" "%GitDir%AUTOEXEC.cfg"
 
-echo. & echo.Linking LISTENSERVER.cfg: & echo.  %CfgDir%LISTENSERVER.cfg
-echo     to & echo.  %GitDir%LISTENSERVER.cfg
-mklink "%CfgDir%LISTENSERVER.cfg" "%GitDir%LISTENSERVER.cfg" & echo.
-
 echo Config install complete & echo. & pause
