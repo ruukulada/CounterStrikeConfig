@@ -1,4 +1,11 @@
 @echo off
+setlocal
+net session >nul 2>&1
+if %ERRORLEVEL% NEQ 0 (
+  sudo "%~f0" %*
+  exit /b
+)
+
 echo. & echo.Enter the CS2 installation directory, for example:
 echo.C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive & echo.
 set /p "Cs2Dir=Install location: "
