@@ -23,4 +23,9 @@ echo.  %CfgDir%AUTOEXEC.cfg
 echo     to & echo.  %GitDir%AUTOEXEC.cfg
 mklink "%CfgDir%AUTOEXEC.cfg" "%GitDir%AUTOEXEC.cfg"
 
+echo. & echo.Linking .vtest:
+echo.  %CfgDir%.vtest
+echo     to & echo.  %GitDir%.vtest
+mklink "%CfgDir%.vtest" "%GitDir%.vtest"
+
 echo.Config install complete & echo. & pause
