@@ -12,4 +12,4 @@ Steps to install
 
    The script will create symlinks to configs
 
-5. Add `+exec autoexec -testscript "../../csgo/cfg/.vtest"` to launch options
+5. Add `+exec autoexec -w 1920 -h 1440` to launch options
